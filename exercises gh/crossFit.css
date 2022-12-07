@@ -1,0 +1,19 @@
+body {
+    background-color: red;
+    font-family: 'Yantramanav', sans-serif;
+    padding: 50px 60px;
+}
+
+.container {
+    display: grid;
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    gap: 10px;
+    grid-template: repeat(12, 1fr) / repeat(6, 1fr);
+}
+
+.pushExercises {
+    background-color: dodgerblue;
+    grid-area: 4 / 1 / 9 / 5;
+}
