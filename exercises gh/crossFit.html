@@ -3,57 +3,158 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>CrossFit</title>
-        <link href='exercises/crossFitStyle.css' rel='stylesheet'> 
+        <title>Crossfit</title>
+        <link href='crossFit.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header>
-            <nav>
-            <a href="pushExercises">Push Exercises</a>
-            <a href="pullExercises">Pull Exercises</a>
-            <a href="lowerBody">Lower Body</a>
-        </header>
 
-        <div class="container">
-            <div id="title">
-                <h1>CrossFit</h1>
+        <div id="titleContainer">
+            <navbar class="navigation">
+                <ul>
+                    <a href="#firstExercise"><li class="burpeeButton">Burpee</li></a>
+                    <li>|</li>
+                    <a href="#secondExercise"><li class="pushupButton">Pushup</li></a>
+                    <li>|</li>
+                    <a href="#thirdExercise"><li class="boxJumpButton">Box Jump</li></a>
+                    <li>|</li>
+                    <a href="#fourthExercise"><li class="theCleanButton">Clean</li></a>
+                </ul>
+            </navbar>
+            <div class="title">
+                <p><span>CROSS</span> FIT</p>
             </div>
-
-            <div id="introduction">
-                <p>
-
-                </p>
-                <hr>
-            </div>
-
-            <div id="push">
-                <section class="pushExercises">
-                    <h3>Push Exercises</h3>
-                    <div class="Pushups">
-                        <h4>Pushups</h4>
-                        <p>
-
-                        </p>
-                    </div>
-                    <br>
-                    <div class="dips">
-                        <h4>Dips</h4>
-                        <p>
-
-                        </p>
-                    </div>
-                    <br>
-                    <div class="shoulderPress">
-                        <h4>Shoulder Press</h4>
-                        <p>
-
-                        </p>
-                    </div>
-                    <br>
-                </section>
+            <div class="introduction">
+                <p>A high-intensity interval training, that improves strength and 
+                conditioning by performing functional movements with explosiveness.</p>
             </div>
         </div>
+        
+        <div id="firstExercise">
+            <div class="firstHeading">
+                <div class="firstTitle">
+                    <p>Burpee</p>
+                    <div class="firstBreak"></div>
+                </div>
+            </div>
+            <div class="burpeeExercise">
+                <div class="burpeePic">
+                </div>
+                <div class="burpeeInfo">
+                    <p class="firstPara">A burpee is a full-body exercise that involves a combination of movements 
+                        including a squat, push-up, and jump.
+                    </p>
+                    <p class="lastPara">
+                        To perform a burpee, start in a standing position, 
+                        squat down with hands in front and then kick your feet 
+                        back to get into a push-up position and perform a push-up.
+                        Then, jump your feet back towards your hands and jump up explosively 
+                        with your arms extended overhead. This counts as one repetition.                       
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+        <div id="secondExercise">
+            <div class="secondHeading">
+                <div class="secondTitle">
+                    <p>Push Up</p>
+                    <div class="secondBreak"></div>
+                </div>
+            </div>
+            <div class="pushupExercise">
+                <div class="pushupPic">
+                </div>
+                
+                <div class="pushupInfo">
+                    <p class="firstPara">
+                        A push-up is a bodyweight exercise that works 
+                        the muscles of the chest, shoulders, triceps, and core.
+                    </p>     
+                    <p class="lastPara">
+                        To perform a push-up, start in a plank position with hands 
+                        shoulder-width apart, and toes supporting 
+                        your lower body. Then, lower your body to the floor while keeping a straight body, and continue 
+                        until your chest is near the ground. Push up to 
+                        starting position by straightening your arms.
+                     </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div id="thirdExercise">
+            <div class="thirdHeading">
+                <div class="thirdTitle">
+                    <p>Box Jump</p>
+                    <div class="thirdBreak"></div>
+                </div>
+            </div>
+            <div class="boxjumpExercise">
+                <div class="boxjumpPic">
+                </div>
+                
+                <div class="boxjumpInfo">
+                    <p class="firstPara">
+                        Box jumps are used in training programs 
+                        to develop explosive power, leg strength, and overall athleticism.
+                    </p>
+                    <p class="lastPara">
+                        A box jump is a plyometric exercise that involves jumping 
+                        onto a box or platform from a standing position. The exercise 
+                        typically starts with the individual standing in front of the 
+                        box with feet shoulder-width apart, then jumping up onto the 
+                        box and landing with both feet at the same time.  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div id="fourthExercise">
+            <div class="fourthHeading">
+                <div class="fourthTitle">
+                    <p>The Clean</p>
+                    <div class="fourthBreak"></div>
+                </div>
+            </div>
+            <div class="theCleanExercise">
+                <div class="theCleanPic">
+                </div>
+                
+                <div class="theCleanInfo">
+                    <p class="firstPara">
+                        The clean is an excellent exercise for building strength 
+                        in the legs, hips, core, and improving athleticism.
+                    </p>
+                    <p class="lastPara">
+                        To perform a clean, begin with barbell on the 
+                        ground then grip the bar with both hands, keeping a straight 
+                        back and feet shoulder-width apart. Then, explosively lift the barbell 
+                        off the ground until the bar ends up on your shoulders in a front rack position, 
+                        with elbows pointing forward and hands gripping the bar.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="content">
+                <p>CONTACT INFO</p>
+            </div>    
+        </div>
+    
+
+
     </body>
 
 </html>
