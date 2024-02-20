@@ -1,0 +1,1152 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    min-height: 100%;
+}
+
+/* Navigation */
+
+
+#titleContainer {
+    background-color: purple;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    justify-items: center;
+
+}
+
+.navigation {
+    background-color: rgb(0,0 ,0, 0.7);
+    color: white;
+    border: 1px solid rgb(0,0 ,0, 0.7);
+    border-radius: 5px;
+    width: 800px;
+    min-width: 700px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+}
+
+.navigation li {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a :hover {
+    box-shadow: 0 0 20px 0 white;
+    transition: box-shadow 1s;
+}
+
+.chestButton {
+
+}
+
+/*#titleContainer {
+    background-color: purple;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 350px 500px;
+    grid-template-rows: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+
+}
+*/
+
+#titleContainer .title {
+    color: white;
+    font-size: 2rem;
+    margin-top: 275px;
+    margin-left: -450px;
+    position: absolute;
+
+}
+
+#titleContainer .title span {
+    font-weight: bold;
+}
+
+#titleContainer .introduction {
+    background-color: rgb(0,0 ,0, 0.7);
+    width: 500px;
+    height: 120px;
+    margin-top: 240px;
+    margin-right: -450px;
+    padding: 20px;
+    position: absolute;
+
+}
+
+#titleContainer .introduction p {
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* Chest */
+#chest {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 675px;
+    background-color: #444444;
+}
+
+
+.chestHeading {
+
+    color: white;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+ 
+}
+
+.chestTitle {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.chestTitle p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.chestLineBreak {
+    border-top: 1px solid rgb(255,255,255, 0.5);
+    width: 200px;
+}
+
+.chestTitle span {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+
+.chestExercises{
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    grid-template-rows: 200px 200px 200px 200px;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+    overflow: hidden;
+
+}
+
+.benchPress {
+    background-image: url("../WebsiteImages/benchPressPic.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.overlay {
+    color: transparent;
+    text-align: center;
+}
+
+.overlay:hover {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    transition: 1s ease;
+}
+
+.overlay .benchPressTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .benchPressInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.benchPress:hover {
+    box-shadow: 0 0 30px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+
+.dumbbellInclinePress {
+    background-image: url("../WebsiteImages/dbInclinePic.jpeg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.dumbbellInclinePress:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.overlay .inclinePressTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .inclinePressInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cableChestFly {
+    background-image: url("../WebsiteImages/CableFly.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.cableChestFly:hover{
+    box-shadow: 0 0 30px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.overlay .cableFlyTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .cableFlyInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pushups {
+    background-image: url("../WebsiteImages/pushups.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.pushups:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.overlay .pushupTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .pushupInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Back */
+#back {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 675px;
+    background-color: #2b2b2b;
+    margin-top: -39px;
+}
+
+.backHeading {
+
+    color: white;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+ 
+}
+
+.backTitle {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.backTitle p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.backLineBreak {
+    border-top: 1px solid rgb(255,255,255, 0.5);
+    width: 200px;
+}
+
+.backTitle span {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+.backExercises{
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    grid-template-rows: 200px 200px 200px 200px;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.latPullDown {
+    background-image: url("../WebsiteImages/latpulldown.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+
+.overlay .latPulldownTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .latPulldownInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.latPullDown:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.barbellRow {
+    background-image: url("../WebsiteImages/barbellrow.png");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.overlay .barbellRowTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .barbellRowInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.barbellRow:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.tbarRow {
+    background-image: url("../WebsiteImages/tbarrow.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.overlay .tbarRowTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .tbarRowInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tbarRow:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.pullups {
+    background-image: url("../WebsiteImages/pullups.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.overlay .pullupsTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .pullupsInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pullups:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+
+
+/* Legs */
+#legs {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 675px;
+    background-color: #444444;
+    margin-top: -39px;
+}
+
+.legsHeading {
+
+    color: white;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+ 
+}
+
+.legsTitle {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.legsTitle p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.legsLineBreak {
+    border-top: 1px solid rgb(255,255,255, 0.5);
+    width: 200px;
+}
+
+.legsTitle span {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+.legExercises{
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    grid-template-rows: 200px 200px 200px 200px;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+}
+    
+.barbellSquat {
+    background-image: url("../WebsiteImages/barbellsquats.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.overlay .barbellSquatsTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .barbellSquatsInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.barbellSquat:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.deadlift {
+    background-image: url("../WebsiteImages/deadlifts.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.overlay .deadliftTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .deadliftInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.deadlift:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.bulgarianSquat {
+    background-image: url("../WebsiteImages/bulgarian.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.overlay .bulgarianTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .bulgarianInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bulgarianSquat:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.lunges {
+    background-image: url("../WebsiteImages/lunges.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.overlay .lungesTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .lungesInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.lunges:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+
+
+/* Shoulders */
+#shoulders {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 675px;
+    background-color: #2b2b2b;
+    margin-top: -39px;
+}
+       
+.shouldersHeading {
+
+    color: white;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+ 
+}
+
+.shouldersTitle {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.shouldersTitle p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.shouldersLineBreak {
+    border-top: 1px solid rgb(255,255,255, 0.5);
+    width: 200px;
+}
+
+.shouldersTitle span {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+.shoulderExercises{
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    grid-template-rows: 200px 200px 200px 200px;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+}
+        
+.shoulderPress {
+    background-image: url("../WebsiteImages/shoulderPress.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.overlay .shoulderPressTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .shoulderPressInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.shoulderPress:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+        
+.sideRaises {
+    background-image: url("../WebsiteImages/sideRaises.png");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.overlay .sideRaisesTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .sideRaisesInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+        
+.sideRaises:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.frontRaises {
+    background-image: url("../WebsiteImages/frontRaises.png");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 1px solid black;
+}
+
+.overlay .frontRaisesTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .frontRaisesInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.frontRaises:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+    
+}
+        
+.rearDeltFlies {
+    background-image: url("../WebsiteImages/rearDelt.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: 1px solid black;
+}
+
+.overlay .rearTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .rearInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rearDeltFlies:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+
+
+/* Bicep */
+#biceps {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 675px;
+    background-color: #444444;
+    margin-top: -39px;
+}
+
+.bicepsHeading {
+
+    color: white;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+ 
+}
+
+.bicepsTitle {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.bicepsTitle p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.bicepsLineBreak {
+    border-top: 1px solid rgb(255,255,255, 0.5);
+    width: 200px;
+}
+
+.bicepsTitle span {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+.bicepExercises{
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    grid-template-rows: 200px 200px 200px 200px;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+}
+    
+.dumbbellCurls {
+    background-image: url("../WebsiteImages/dbCurls.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border: 1px solid black;
+}
+
+.overlay .dbCurlsTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .dbCurlsInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dumbbellCurls:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.cableCurls {
+    background-image: url("../WebsiteImages/cableCurls.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border: 1px solid black;
+}
+
+.overlay .cableCurlsTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .cableCurlsInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cableCurls:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.barbellCurls {
+    background-image: url("../WebsiteImages/barbellCurls.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 1px solid black;
+}
+
+.overlay .barbellCurlsTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .barbellCurlsInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.barbellCurls:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.hammerCurls {
+    background-image: url("../WebsiteImages/hammerCurls.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: 1px solid black;
+}
+
+.overlay .hammerCurlsTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .hammerCurlsInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hammerCurls:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+
+
+
+/* Tricep */
+#tricep {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 675px;
+    background-color: #2b2b2b;
+    margin-top: -39px;
+}
+
+.tricepHeading {
+
+    color: white;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+ 
+}
+
+.tricepTitle {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.tricepTitle p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.tricepLineBreak {
+    border-top: 1px solid rgb(255,255,255, 0.5);
+    width: 200px;
+}
+
+.tricepTitle span {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+.tricepExercises{
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    grid-template-rows: 200px 200px 200px 200px;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+}
+    
+.tricepPushdown {
+    background-image: url("../WebsiteImages/tricepPushdown.png");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border: 1px solid black;
+}
+
+.overlay .tricepPushdownTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .tricepPushdownInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tricepPushdown:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.dumbbellOverhead {
+    background-image: url("../WebsiteImages/tricepExtension.png");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border: 1px solid black;
+}
+
+.overlay .dbOverheadTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .dbOverheadInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dumbbellOverhead:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.tricepKickback {
+    background-image: url("../WebsiteImages/tricepKickback.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 1px solid black;
+}
+
+.overlay .tricepKickbackTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .tricepKickbackInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tricepKickback:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.skullCrushers {
+    background-image: url("../WebsiteImages/skullCrushers.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: 1px solid black;
+}
+
+.overlay .skullCrushersTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .skullCrushersInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.skullCrushers:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+#contact {
+    background-color: #444444;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#contact p {
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

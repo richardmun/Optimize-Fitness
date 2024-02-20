@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.macroForm {
+    width: 40%;
+    margin: auto;
+}
+
+.submitButton {
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    padding: .5em 0;
+}
+
+
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+select, option {
+    min-height: 3em;
+}
+
+
+.inline {
+    width: unset;
+    vertical-align: auto;
+}
+
+button[type=submit] {
+    display: block;
+    width: 20%;
+    height: 2em;
+    font-size: 1.1em;
+    margin: 2em auto;
+    background-color: whitesmoke;
+}

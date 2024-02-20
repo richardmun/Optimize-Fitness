@@ -1,0 +1,263 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    min-height: 100%;
+}
+
+/* Navigation */
+
+
+#titleContainer {
+    background-color: purple;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    justify-items: center;
+
+}
+
+.navigation {
+    background-color: rgb(0,0 ,0, 0.7);
+    color: white;
+    border: 1px solid rgb(0,0 ,0, 0.7);
+    border-radius: 5px;
+    width: 800px;
+    min-width: 700px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+}
+
+.navigation li {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a :hover {
+    box-shadow: 0 0 20px 0 white;
+    transition: box-shadow 1s;
+}
+
+.chestButton {
+
+}
+
+/*#titleContainer {
+    background-color: purple;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 350px 500px;
+    grid-template-rows: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+
+}
+*/
+
+#titleContainer .title {
+    color: white;
+    font-size: 2rem;
+    margin-top: 275px;
+    margin-left: -450px;
+    position: absolute;
+
+}
+
+#titleContainer .title span {
+    font-weight: bold;
+}
+
+#titleContainer .introduction {
+    background-color: rgb(0,0 ,0, 0.7);
+    width: 500px;
+    height: 120px;
+    margin-top: 240px;
+    margin-right: -450px;
+    padding: 20px;
+    position: absolute;
+
+}
+
+#titleContainer .introduction p {
+    color: white;
+    font-size: 1rem;
+}
+
+
+#firstExercise {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 3000px;
+    background-color: #2b2b2b;
+}
+
+
+.firstHeading {
+    color: white;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+ 
+}
+
+.firstTitle {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.firstTitle p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.firstBreak {
+    border-top: 1px solid rgb(255,255,255, 0.5);
+    width: 200px;
+}
+
+.firstTitle span {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+.allExercises {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 350px 350px 350px 350px;
+    justify-content: center;
+    row-gap: 150px;
+    padding-top: 100px;
+
+}
+
+.stairmasterExercise {
+    background-color:red;
+    border: 2px solid black;
+}
+
+.overlay{
+    color: transparent;
+    margin-top:-58%;
+}
+
+/*Red box only translates when you get to words.*/
+/*Need entire box to change in any location of box */
+.stairmasterInfo {
+    text-align: center;
+    padding-top: 25%;
+    padding-bottom: 27%;
+}
+
+
+.overlay:hover {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    transition: 1s ease;
+}
+
+.spanTitle {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25%;
+    height: 100%;
+}
+
+.spanTitle:hover {
+    color: transparent;
+    transition: 1s ease;
+}
+
+.overlay .stairmasterInfo {
+    font-size: 16px;
+}
+
+.stairmasterExercise:hover {
+    box-shadow: 0 0 60px 0 black;
+    transition: all 1s;
+    transform: scale(1.2) ;
+}
+
+
+.sprintsExercise {
+    background-color: blue;
+    border: 2px solid black;
+
+}
+
+.sprintsExercise:hover {
+    box-shadow: 0 0 60px 0 black;
+    transition: all 1s;
+    transform: scale(1.2) ;
+}
+
+
+.rowsExercise {
+    background-color: purple;
+    border: 2px solid black;
+
+}
+
+.rowsExercise:hover {
+    box-shadow: 0 0 60px 0 black;
+    transition: all 1s;
+    transform: scale(1.2) ;
+}
+
+.jumpropeExercise {
+    background-color: green;
+    border: 2px solid black;
+}
+
+.jumpropeExercise:hover {
+    box-shadow: 0 0 60px 0 black;
+    transition: all 1s;
+    transform: scale(1.2) ;
+}
+
+
+#contact {
+    background-color: #444444;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#contact p {
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,648 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    min-height: 100%;
+}
+
+/* Navigation */
+
+
+#titleContainer {
+    background-color: purple;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    justify-items: center;
+
+}
+
+.navigation {
+    background-color: rgb(0,0 ,0, 0.7);
+    color: white;
+    border: 1px solid rgb(0,0 ,0, 0.7);
+    border-radius: 5px;
+    width: 800px;
+    min-width: 700px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+}
+
+.navigation li {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a :hover {
+    box-shadow: 0 0 20px 0 white;
+    transition: box-shadow 1s;
+}
+
+.chestButton {
+
+}
+
+/*#titleContainer {
+    background-color: purple;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 350px 500px;
+    grid-template-rows: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+
+}
+*/
+
+#titleContainer .title {
+    color: white;
+    font-size: 2rem;
+    margin-top: 275px;
+    margin-left: -450px;
+    position: absolute;
+
+}
+
+#titleContainer .title span {
+    font-weight: bold;
+}
+
+#titleContainer .introduction {
+    background-color: rgb(0,0 ,0, 0.7);
+    width: 500px;
+    height: 120px;
+    margin-top: 240px;
+    margin-right: -450px;
+    padding: 20px;
+    position: absolute;
+
+}
+
+#titleContainer .introduction p {
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* Chest */
+#protein {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 675px;
+    background-color: #2b2b2b;
+}
+
+
+.proteinHeading {
+
+    color: white;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+ 
+}
+
+.proteinTitle {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.proteinTitle p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.proteinLineBreak {
+    border-top: 1px solid rgb(255,255,255, 0.5);
+    width: 200px;
+}
+
+.proteinTitle span {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+
+.proteinSelection{
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    grid-template-rows: 200px 200px 200px 200px;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+    overflow: hidden;
+
+}
+
+.chicken {
+    background-image: url("../WebsiteImages/chicken.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.overlay {
+    color: transparent;
+    text-align: center;
+}
+
+.overlay:hover {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    transition: 1s ease;
+}
+
+.overlay .chickenTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .chickenInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.chicken:hover {
+    box-shadow: 0 0 30px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+
+.beef {
+    background-image: url("../WebsiteImages/beef.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.beef:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.overlay .beefTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .beefInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fish {
+    background-image: url("../WebsiteImages/fish.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.fish:hover{
+    box-shadow: 0 0 30px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.overlay .fishTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .fishInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.turkey {
+    background-image: url("../WebsiteImages/turkey.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.turkey:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.overlay .turkeyTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .turkeyInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Back */
+#carbs {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 675px;
+    background-color: #444444;
+    margin-top: -39px;
+}
+
+.carbsHeading {
+
+    color: white;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+ 
+}
+
+.carbsTitle {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.carbsTitle p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.carbsLineBreak {
+    border-top: 1px solid rgb(255,255,255, 0.5);
+    width: 200px;
+}
+
+.carbsTitle span {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+.carbsSelection {
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    grid-template-rows: 200px 200px 200px 200px;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.rice {
+    background-image: url("../WebsiteImages/rice.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+
+.overlay .riceTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .riceInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rice:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.oatmeal {
+    background-image: url("../WebsiteImages/oatmeal.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.overlay .oatmealTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .oatmealInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.oatmeal:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.potato {
+    background-image: url("../WebsiteImages/potato.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.overlay .potatoTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .potatoInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.potato:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.something {
+    background-image: url("../WebsiteImages/something.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.overlay .somethingTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .somethingInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.something:hover {
+    box-shadow: 0 0 40px 0 white;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+
+
+/* Legs */
+#fats {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 675px;
+    background-color: #2b2b2b;
+    margin-top: -39px;
+}
+
+.fatsHeading {
+
+    color: white;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px;
+ 
+}
+
+.fatsTitle {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.fatsTitle p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.fatsLineBreak {
+    border-top: 1px solid rgb(255,255,255, 0.5);
+    width: 200px;
+}
+
+.fatsTitle span {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+.fatsSelection{
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    grid-template-rows: 200px 200px 200px 200px;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    padding-top: 50px;
+}
+    
+.eggs {
+    background-image: url("../WebsiteImages/eggs.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.overlay .eggsTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .eggsInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.eggs:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.salmon {
+    background-image: url("../WebsiteImages/oils.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border: 1px solid black
+}
+
+.overlay .salmonTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .salmonInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.salmon:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.avocado {
+    background-image: url("../WebsiteImages/avocado.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.overlay .avocadoTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .avocadoInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.avocado:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+    
+.nuts {
+    background-image: url("../WebsiteImages/nuts.jpg");
+    background-size: cover;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: 1px solid black
+}
+
+.overlay .nutsTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.overlay .nutsInfo {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nuts:hover {
+    box-shadow: 0 0 40px 0 black;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+
+
+#contact {
+    background-color: #444444;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#contact p {
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
