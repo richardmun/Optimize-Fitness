@@ -9,3 +9,6 @@ Home page - consist of numerous links that lead towards exercises, dietary infor
 
 ### Additional Information
 * Website is only compatible with desktop version as media queries are not used for accessibility for all devices.
+
+### Acknowledgement
+Development of code structure created by Richard Munoz and website design created by Sudery Designs.
