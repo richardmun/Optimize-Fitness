@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+/* Calculator */
+/* Don't use viewport because the size of the child elements is dependent on the parent size */ 
+#calculator {
+    background: #444444;
+    width: 60%;
+    max-width: 400px;
+    min-width: 375px;
+    max-height: 100%;
+    min-height: 450px;
+    border-radius: 5px;
+    overflow: auto; /* Auto to enable scrolling if needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+
+/* Form */
+
+#caloriesForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#caloriesForm > #objectiveSection,
+#caloriesForm > #ageSection,
+#caloriesForm > #genderSection,
+#caloriesForm > #heightSection,
+#caloriesForm > #weightSection,
+#caloriesForm > #activitySection {
+  /* shared styles for all child sections */
+  margin-bottom: 1rem;
+
+}
+
+
+.formHeading {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    /* Change font according to font used in homepage */
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Objective */
+
+#objectiveSection .objectiveOption {
+    background: transparent;
+    color: white;
+    width: 225px;
+    border: none;
+    border-bottom: solid 1px lightgray;
+    padding: 5px 0 5px 0;
+    box-decoration-break: none;
+
+}
+
+
+/* Age */
+#ageSection .ageInput{
+    background: transparent;
+    color: white;
+    width: 225px;
+    border: none;
+    border-bottom: solid 1px lightgray;
+    padding: 5px 0 5px 0;
+
+}
+
+.ageInput::-webkit-inner-spin-button, /* Removes default increment/decrement arrows for input box */
+.ageInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+/* Gender */
+
+#genderSection {
+    color: black;
+    display: inline-flex;
+    align-items: center;
+}
+
+.maleRadio[type="radio"],
+.femaleRadio[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.maleRadioLabel {
+    color: white;
+    margin-right: 30px;
+    font-size: .9rem;
+}
+
+.femaleRadioLabel {
+    color: white;
+    margin-right: 0;
+    font-size: .9rem;
+}
+
+
+
+/* Height */
+
+#heightSection {
+    
+}
+
+.heightFt {
+    background: transparent;
+    color: white;
+    width: 105px;
+    margin-right: 13px; /* Space between Ft from Inches */
+    border: none;
+    border-bottom: solid 1px lightgray;
+    padding: 5px 0 5px 0;
+}
+
+.heightFt::-webkit-inner-spin-button, /* Removes default increment/decrement arrows for input box */
+.heightFt::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.heightInches {
+    background: transparent;
+    color: white;
+    width: 105px;
+    border: none;
+    border-bottom: solid 1px lightgray;
+    padding: 5px 0 5px 0;
+}
+
+.heightInches::-webkit-inner-spin-button, /* Removes default increment/decrement arrows for input box */
+.heightInches::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Weight */
+
+#weightSection .weightInput {
+    background: transparent;
+    color: white;
+    width: 225px;
+    border: none;
+    border-bottom: solid 1px lightgray;
+    padding: 5px 0 5px 0;
+}
+
+.weightInput::-webkit-inner-spin-button,
+.weightInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Activity */
+#activitySection .activityOption {
+    background: transparent;
+    color: white;
+    width: 225px;
+    border: none;
+    border-bottom: solid 1px lightgray;
+    padding: 5px 0 5px 0;
+}
+
+/* Form Buttons */
+
+#formButtons {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+/* Reset */
+#resetButton {
+    background: transparent;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    border-bottom: solid 1px lightgray;
+    padding: 5px 10px 5px 10px;
+}
+
+#resetButton:hover {
+    background: rgb(240, 240, 240);
+    color: black;
+    transition: 1s;
+}
+
+
+/* Submit */
+#submitButton {
+    background: transparent;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    border-bottom: solid 1px lightgray;
+    padding: 5px 10px 5px 10px;
+}
+
+#submitButton:hover {
+    background: rgb(240, 240, 240);
+    color: black;
+    transition: 1s;
+}
+
+#caloriesNeeded {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2vh;
+    margin-top: 1rem;
+}
+
+#caloriesDisplay {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#caloriesNeeded,
+#caloriesDisplay {
+    opacity: 0;
+    transition: opacity 2s ease;
+    color: white;
+}
+
+#caloriesNeeded.show,
+#caloriesDisplay.show {
+    opacity: 1;
+}
+
+/* Slow appearance does not work with following selections:
+        
+
+*/
