@@ -24,6 +24,11 @@ function calorieIntake() {
         var heightInches = document.getElementById("heightInches").value;
         var weightPounds = document.getElementById("weightLbs").value;
         var activityLevel = document.querySelector('select[name="activityLevel"]').value;
+
+        // Validate input before submitting the form
+        if (!inputValidation(weightObjective, age, male, female, heightFeet, heightInches, weightPounds, activityLevel)) {
+            return; // Stop further processing if validation fails
+        }
         
         // Data of user input will be stored in userData object
         var userData = {
@@ -170,40 +175,23 @@ function sendDataToServer(userData) {
         });
 }
 
-
-
-// Connect frontend with backend
-    // Modify JS to send POST request to node.js when form is submitted.
-    // Fetch API or AJAX library (Axios) to make HTTP request.
-        // Make sure server is running "node server.js" before testing form submission
-        // Update URL in fetch if server is running on different host/port
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-Sedentary (little or no exercise): BMR * 1.2
-Lightly active (light exercise/sports 1-3 days/week): BMR * 1.375
-Moderately active (moderate exercise/sports 3-5 days/week): BMR * 1.55
-Very active (hard exercise/sports 6-7 days a week): BMR * 1.725
-Extremely active (very hard exercise/sports & physical job or 2x training): BMR * 1.9
+/* Function
+    Input validator for input sections to ensure that user is not able to leave section blank.
+    Input vali
 */
+function inputValidation(weightObjective, age, male, female, heightFeet, heightInches, weightPounds, activitylevel) {
+    var inputValues = [weightObjective, age, male, female, heightFeet, heightInches, weightPounds, activitylevel];
+    for (var i; i <= inputValues; i++) {
+        if(inputValues === "") {
+            alert("Fill all input sections")
+        }
+    }
 
-// Metabolism slows as age increases
-
-// Males require more calories than females
-
-
+    if (heightInches < 1 || heightInches > 11) {
+        alert("Enter a number between 1 and 12.")
+        return false;
+    }
+    return true;
+}
 
 
