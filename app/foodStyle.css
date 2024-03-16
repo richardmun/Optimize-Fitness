@@ -427,29 +427,29 @@ a :hover {
     transform: scale(1.2);
 }
 
-.something {
-    background-image: url("../WebsiteImages/something.jpg");
+.fruit {
+    background-image: url("../WebsiteImages/fruit.jpeg");
     background-size: cover;
     grid-column-start: 3;
     grid-row-start: 2;
     border: 1px solid black
 }
 
-.overlay .somethingTitle {
+.overlay .fruitTitle {
     font-size: 25px;
     font-weight: bold;
     padding-top: 10px;
 
 }
 
-.overlay .somethingInfo {
+.overlay .fruitInfo {
     font-size: 16px;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.something:hover {
+.fruit:hover {
     box-shadow: 0 0 40px 0 white;
     transition: all 1s;
     transform: scale(1.2);
