@@ -24,33 +24,6 @@ body {
 
 }
 
-.navigation {
-    background-color: rgb(0,0 ,0, 0.7);
-    color: white;
-    border: 1px solid rgb(0,0 ,0, 0.7);
-    border-radius: 5px;
-    width: 800px;
-    min-width: 700px;
-    height: 50px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-
-}
-
-.navigation li {
-    display: inline;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-a :hover {
-    box-shadow: 0 0 20px 0 white;
-    transition: box-shadow 1s;
-}
-
-
 
 #titleContainer .title {
     color: white;
