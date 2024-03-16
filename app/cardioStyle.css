@@ -24,58 +24,12 @@ body {
 
 }
 
-.navigation {
-    background-color: rgb(0,0 ,0, 0.7);
-    color: white;
-    border: 1px solid rgb(0,0 ,0, 0.7);
-    border-radius: 5px;
-    width: 800px;
-    min-width: 700px;
-    height: 50px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-
-}
-
-.navigation li {
-    display: inline;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-a :hover {
-    box-shadow: 0 0 20px 0 white;
-    transition: box-shadow 1s;
-}
-
-.chestButton {
-
-}
-
-/*#titleContainer {
-    background-color: purple;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    width: 100%;
-    height: 600px;
-    display: grid;
-    grid-template-columns: 350px 500px;
-    grid-template-rows: 100px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    position: relative;
-
-}
-*/
 
 #titleContainer .title {
     color: white;
     font-size: 2rem;
     margin-top: 275px;
-    margin-left: -450px;
+    margin-left: -350px;
     position: absolute;
 
 }
@@ -86,10 +40,10 @@ a :hover {
 
 #titleContainer .introduction {
     background-color: rgb(0,0 ,0, 0.7);
-    width: 500px;
-    height: 120px;
+    width: 450px;
+    height: 100px;
     margin-top: 240px;
-    margin-right: -450px;
+    margin-right: -350px;
     padding: 20px;
     position: absolute;
 
@@ -105,7 +59,7 @@ a :hover {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     width: 100%;
-    height: 3000px;
+    height: 2200px;
     background-color: #2b2b2b;
 }
 
@@ -153,93 +107,196 @@ a :hover {
 
 }
 
+/* Stairmaster */
 .stairmasterExercise {
-    background-color:red;
+    background-image: url("../WebsiteImages/stairmaster.jpeg");
+    background-size: cover;
     border: 2px solid black;
-}
-
-.overlay{
-    color: transparent;
-    margin-top:-58%;
-}
-
-/*Red box only translates when you get to words.*/
-/*Need entire box to change in any location of box */
-.stairmasterInfo {
-    text-align: center;
-    padding-top: 25%;
-    padding-bottom: 27%;
-}
-
-
-.overlay:hover {
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-    transition: 1s ease;
-}
-
-.spanTitle {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 25%;
-    height: 100%;
-}
-
-.spanTitle:hover {
-    color: transparent;
-    transition: 1s ease;
-}
-
-.overlay .stairmasterInfo {
-    font-size: 16px;
+    position: relative;
 }
 
 .stairmasterExercise:hover {
-    box-shadow: 0 0 60px 0 black;
+    box-shadow: 0 0 60px 0 white;
     transition: all 1s;
-    transform: scale(1.2) ;
+    transform: scale(1.2);
 }
 
+.stairmasterExercise .spanTitle {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 42%;
+    left: 32%;
+}
 
+.stairmasterExercise .stairmasterInfo {
+    font-size: 20px;
+    position: absolute;
+    top: 38%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.stairmasterExercise:hover .spanTitle {
+    color: transparent;
+    transition: color 1s ease; /* Changed */
+}
+
+.overlay {
+    font-size: 16px;
+    color: transparent;
+    text-align: center;
+}
+
+.stairmasterExercise:hover .overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    transition: all 1s ease; /* Changed */
+}
+
+/* Sprints */
 .sprintsExercise {
-    background-color: blue;
+    background-image: url("../WebsiteImages/sprints.jpeg");
+    background-size: cover;
     border: 2px solid black;
-
+    position: relative;
 }
 
 .sprintsExercise:hover {
-    box-shadow: 0 0 60px 0 black;
+    box-shadow: 0 0 60px 0 white;
     transition: all 1s;
-    transform: scale(1.2) ;
+    transform: scale(1.2);
 }
 
+.sprintsExercise .spanTitle {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 42%;
+    left: 38%;
+}
 
+.sprintsExercise .sprintsInfo {
+    font-size: 20px;
+    position: absolute;
+    top: 32%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sprintsExercise:hover .spanTitle {
+    color: transparent;
+    transition: color 1s ease; /* Changed */
+}
+
+.overlay {
+    color: transparent;
+    text-align: center;
+}
+
+.sprintsExercise:hover .overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    transition: all 1s ease; /* Changed */
+}
+
+/* Rows */
 .rowsExercise {
-    background-color: purple;
+    background-image: url("../WebsiteImages/cardioRows.jpeg");
+    background-size: cover;
     border: 2px solid black;
-
+    position: relative;
 }
 
 .rowsExercise:hover {
-    box-shadow: 0 0 60px 0 black;
+    box-shadow: 0 0 60px 0 white;
     transition: all 1s;
-    transform: scale(1.2) ;
+    transform: scale(1.2);
 }
 
+.rowsExercise .spanTitle {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 42%;
+    left: 40%;
+}
+
+.rowsExercise .rowsInfo {
+    font-size: 20px;
+    position: absolute;
+    top: 34%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rowsExercise:hover .spanTitle {
+    color: transparent;
+    transition: color 1s ease; /* Changed */
+}
+
+.overlay {
+    color: transparent;
+    text-align: center;
+}
+
+.rowsExercise:hover .overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    transition: all 1s ease; /* Changed */
+}
+
+/* Jumprope */
 .jumpropeExercise {
-    background-color: green;
+    background-image: url("../WebsiteImages/jumprope.jpeg");
+    background-size: cover;
     border: 2px solid black;
+    position: relative;
 }
 
 .jumpropeExercise:hover {
-    box-shadow: 0 0 60px 0 black;
+    box-shadow: 0 0 60px 0 white;
     transition: all 1s;
-    transform: scale(1.2) ;
+    transform: scale(1.2);
 }
 
+.jumpropeExercise .spanTitle {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 42%;
+    left: 32%;
+}
 
+.jumpropeExercise .jumpropeInfo {
+    font-size: 20px;
+    position: absolute;
+    top: 29%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.jumpropeExercise:hover .spanTitle {
+    color: transparent;
+    transition: color 1s ease; /* Changed */
+}
+
+.overlay {
+    color: transparent;
+    text-align: center;
+}
+
+.jumpropeExercise:hover .overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    transition: all 1s ease; /* Changed */
+}
+
+/* Contact */
 #contact {
     background-color: #444444;
     border-top: 1px solid black;
